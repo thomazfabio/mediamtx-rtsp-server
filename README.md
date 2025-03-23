@@ -23,7 +23,6 @@ Os vídeos devem ser organizados em pastas dentro de um diretório chamado **vid
 
 Cada **vídeo** dentro de uma categoria será exposto como um **stream RTSP** com um link único.  
 
----
 
 ## 🔑 **Configuração de Autenticação RTSP**  
 
