@@ -1,0 +1,28 @@
+paths:
+  virat_1:
+    runOnInit: >
+      ffmpeg -re -stream_loop -1 -i /videos/virat/1.mp4
+      -c:v libx264 -preset ultrafast -tune zerolatency 
+      -b:v 1000k -bufsize 500k 
+      -vf "scale=640:480" 
+      -an -f rtsp rtsp:fabio:th0202@localhost:8554/virat_1
+    runOnInitRestart: yes
+  virat_2:
+    runOnInit: >
+      ffmpeg -re -stream_loop -1 -i /videos/virat/2.mp4
+      -c:v libx264 -preset ultrafast -tune zerolatency 
+      -b:v 1000k -bufsize 500k 
+      -vf "scale=640:480" 
+      -an -f rtsp rtsp:fabio:th0202@localhost:8554/virat_2
+    runOnInitRestart: yes
+authInternalUsers:
+- user: fabio
+  pass: th0202
+  ips: []
+  permissions:
+  - action: publish
+- user: th
+  pass: th0202
+  ips: []
+  permissions:
+  - action: read

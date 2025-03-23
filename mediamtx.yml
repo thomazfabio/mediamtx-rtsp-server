@@ -1,0 +1,52 @@
+paths:
+  virat_1:
+    runOnInit: ffmpeg -re -stream_loop -1 -i ./videos/virat/1.mp4 -c:v libx264 -preset
+      veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf 'scale=1280:720,fps=30'
+      -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/virat_1
+    runOnInitRestart: true
+  virat_2:
+    runOnInit: ffmpeg -re -stream_loop -1 -i ./videos/virat/2.mp4 -c:v libx264 -preset
+      veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf 'scale=1280:720,fps=30'
+      -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/virat_2
+    runOnInitRestart: true
+  pessoas_1:
+    runOnInit: ffmpeg -re -stream_loop -1 -i ./videos/pessoas/1.mp4 -c:v libx264 -preset
+      veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf 'scale=1280:720,fps=30'
+      -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/pessoas_1
+    runOnInitRestart: true
+  pessoas_2:
+    runOnInit: ffmpeg -re -stream_loop -1 -i ./videos/pessoas/2.mp4 -c:v libx264 -preset
+      veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf 'scale=1280:720,fps=30'
+      -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/pessoas_2
+    runOnInitRestart: true
+  carros_1:
+    runOnInit: ffmpeg -re -stream_loop -1 -i ./videos/carros/1.mp4 -c:v libx264 -preset
+      veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf 'scale=1280:720,fps=30'
+      -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/carros_1
+    runOnInitRestart: true
+  fabrica_1:
+    runOnInit: ffmpeg -re -stream_loop -1 -i ./videos/fabrica/1.mp4 -c:v libx264 -preset
+      veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf 'scale=1280:720,fps=30'
+      -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/fabrica_1
+    runOnInitRestart: true
+  fabrica_2:
+    runOnInit: ffmpeg -re -stream_loop -1 -i ./videos/fabrica/2.mp4 -c:v libx264 -preset
+      veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf 'scale=1280:720,fps=30'
+      -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/fabrica_2
+    runOnInitRestart: true
+  fabrica_3:
+    runOnInit: ffmpeg -re -stream_loop -1 -i ./videos/fabrica/3.mp4 -c:v libx264 -preset
+      veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf 'scale=1280:720,fps=30'
+      -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/fabrica_3
+    runOnInitRestart: true
+authInternalUsers:
+- user: fabio
+  pass: th0202
+  ips: []
+  permissions:
+  - action: publish
+- user: th
+  pass: th0202
+  ips: []
+  permissions:
+  - action: read
