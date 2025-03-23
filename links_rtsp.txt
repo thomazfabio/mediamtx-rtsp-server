@@ -1,0 +1,10 @@
+rtsp://fabio:th0202@localhost:8554/sidewalk_1
+rtsp://fabio:th0202@localhost:8554/sidewalk_2
+rtsp://fabio:th0202@localhost:8554/sidewalk_3
+rtsp://fabio:th0202@localhost:8554/sidewalk_4
+rtsp://fabio:th0202@localhost:8554/sidewalk_5
+rtsp://fabio:th0202@localhost:8554/transit_1
+rtsp://fabio:th0202@localhost:8554/transit_2
+rtsp://fabio:th0202@localhost:8554/transit_3
+rtsp://fabio:th0202@localhost:8554/transit_4
+rtsp://fabio:th0202@localhost:8554/transit_5

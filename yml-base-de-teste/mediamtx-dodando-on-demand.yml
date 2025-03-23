@@ -1,0 +1,23 @@
+paths:
+  sidewalk_1:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/sidewalk/newburyport-ma.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'scale=1280:720,fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/sidewalk_1
+    runOnInitRestart: true
+
+  transit_5:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit/village-of-tilton-traffic-camera.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'scale=1280:720,fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_5
+    runOnInitRestart: true
+authInternalUsers:
+- user: fabio
+  pass: th0202
+  ips: []
+  permissions:
+  - action: publish
+- user: th
+  pass: th0202
+  ips: []
+  permissions:
+  - action: read
