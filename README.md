@@ -1,8 +1,6 @@
 # 📡 **MediaMTX RTSP Server**  
 🎥 **Servidor dinâmico de RTSP para simulação de múltiplas câmeras de segurança**  
 
-![RTSP Streaming](https://user-images.githubusercontent.com/25181517/183913732-21934d38-9b2b-4b74-b62c-81c79df7bfff.png)  
-
 ## 🚀 **Sobre o Projeto**  
 Este projeto permite criar um **servidor RTSP dinâmico** utilizando **MediaMTX** e **FFmpeg** dentro de um **container Docker**. Cada vídeo armazenado no diretório definido será automaticamente transformado em um **stream RTSP**, facilitando a simulação de diversas câmeras de segurança.  
 
