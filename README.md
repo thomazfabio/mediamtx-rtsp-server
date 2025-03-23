@@ -7,7 +7,7 @@ Este projeto permite criar um **servidor RTSP dinâmico** utilizando **MediaMTX*
 ## 🔧 **Requisitos**  
 Antes de começar, certifique-se de ter os seguintes itens instalados:  
 ✅ **Docker** e **Docker Compose**  
-✅ **Imagem do MediaMTX com FFmpeg**  
+✅ **Imagem Docker do MediaMTX com FFmpeg**  
 ✅ **Python 3** e bibliotecas necessárias  
 
 ## 📂 **Estrutura de Diretórios**  
@@ -140,6 +140,18 @@ ffplay rtsp://fabio:th0202@localhost:8554/birds_1
 ## 🛠 **Personalização**  
 - **Altere as credenciais no `set_config.py` antes de rodar o script.**  
 - **Adapte as configurações de qualidade no `mediamtx.yml` conforme necessário.**  
+
+
+## 📚 **Referências**  
+
+Este projeto utiliza o **MediaMTX**, um servidor de streaming de código aberto que suporta **RTSP, RTMP, HLS e WebRTC**. Para mais informações sobre seu funcionamento, configuração e uso, consulte os seguintes links:  
+
+- **Repositório oficial do MediaMTX:** [https://github.com/bluenviron/mediamtx](https://github.com/bluenviron/mediamtx)  
+- **Documentação oficial:** [https://bluenviron.github.io/mediamtx](https://bluenviron.github.io/mediamtx)  
+- **Imagem oficial no Docker Hub:** [https://hub.docker.com/r/bluenviron/mediamtx](https://hub.docker.com/r/bluenviron/mediamtx)  
+
+Caso queira entender melhor como o **MediaMTX** é configurado e utilizado dentro deste projeto, consulte a documentação oficial e os exemplos disponíveis no repositório acima.  
+
 
 ## 📌 **Contribuição**  
 Sugestões e melhorias são bem-vindas! Abra uma **issue** ou envie um **pull request**.  
