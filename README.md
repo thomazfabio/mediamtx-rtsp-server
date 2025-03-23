@@ -136,7 +136,6 @@ Abra o VLC → `Mídia` → `Abrir fluxo de rede` → Cole o link RTSP.
 ffplay rtsp://fabio:th0202@localhost:8554/birds_1
 ```
 
----
 
 ## 🛠 **Personalização**  
 - **Altere as credenciais no `set_config.py` antes de rodar o script.**  
