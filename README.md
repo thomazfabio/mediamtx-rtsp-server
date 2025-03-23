@@ -82,7 +82,7 @@ authInternalUsers:
 ⚠️ **IMPORTANTE:**  
 Antes de rodar o script `set_config.py`, edite as credenciais no próprio script para que os usuários e senhas reflitam a configuração desejada no `mediamtx.yml`. Isso garantirá que os links RTSP gerados funcionem corretamente.  
 
---- 
+
 
 ## ⚙️ **Passo a Passo para Configuração**  
 
