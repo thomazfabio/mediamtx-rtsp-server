@@ -35,7 +35,7 @@ for category in os.listdir(BASE_DIR):
                     "runOnDemand": f"ffmpeg -re -stream_loop -1 -i {video_path} "
                                  "-c:v libx264 -preset veryfast -tune zerolatency "
                                  "-b:v 1000k -bufsize 500k "
-                                 "-vf 'scale=1280:720,fps=30'"  
+                                 "-vf 'fps=30'"  
                                  f" -r 30 -an -f rtsp {rtsp_link}",
                     "runOnInitRestart": True  # Corrigido: agora é um booleano
                 }

@@ -2,52 +2,127 @@ paths:
   sidewalk_1:
     runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/sidewalk/newburyport-ma.mp4
       -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
-      'scale=1280:720,fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/sidewalk_1
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/sidewalk_1
     runOnInitRestart: true
   sidewalk_2:
     runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/sidewalk/philippines-1.mp4
       -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
-      'scale=1280:720,fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/sidewalk_2
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/sidewalk_2
     runOnInitRestart: true
   sidewalk_3:
     runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/sidewalk/philippines-2.mp4
       -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
-      'scale=1280:720,fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/sidewalk_3
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/sidewalk_3
     runOnInitRestart: true
   sidewalk_4:
     runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/sidewalk/sag-harbor-village-new-york.mp4
       -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
-      'scale=1280:720,fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/sidewalk_4
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/sidewalk_4
     runOnInitRestart: true
   sidewalk_5:
     runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/sidewalk/westhampton-beach-village-and-theater.mp4
       -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
-      'scale=1280:720,fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/sidewalk_5
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/sidewalk_5
     runOnInitRestart: true
-  transit_1:
-    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit/4corners-camera-downtown.mp4
+  transit_CIF_NTSC_352x240_1:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_CIF_NTSC_352x240/CIF_NTSC_4corners-camera-downtown.mp4
       -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
-      'scale=1280:720,fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_1
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_CIF_NTSC_352x240_1
     runOnInitRestart: true
-  transit_2:
-    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit/public-square-watertown-ny.mp4
+  transit_CIF_NTSC_352x240_2:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_CIF_NTSC_352x240/CIF_NTSC_public-square-watertown-ny.mp4
       -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
-      'scale=1280:720,fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_2
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_CIF_NTSC_352x240_2
     runOnInitRestart: true
-  transit_3:
-    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit/tokio-live-cam.mp4
+  transit_CIF_NTSC_352x240_3:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_CIF_NTSC_352x240/CIF_NTSC_tokio-live-cam.mp4
       -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
-      'scale=1280:720,fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_3
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_CIF_NTSC_352x240_3
     runOnInitRestart: true
-  transit_4:
-    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit/town-of-collingwood-live-stream.mp4
+  transit_CIF_NTSC_352x240_4:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_CIF_NTSC_352x240/CIF_NTSC_town-of-collingwood-live-stream.mp4
       -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
-      'scale=1280:720,fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_4
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_CIF_NTSC_352x240_4
     runOnInitRestart: true
-  transit_5:
-    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit/village-of-tilton-traffic-camera.mp4
+  transit_CIF_NTSC_352x240_5:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_CIF_NTSC_352x240/CIF_NTSC_village-of-tilton-traffic-camera.mp4
       -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
-      'scale=1280:720,fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_5
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_CIF_NTSC_352x240_5
+    runOnInitRestart: true
+  transit_HD_1280x720_1:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_HD_1280x720/HD_4corners-camera-downtown.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_HD_1280x720_1
+    runOnInitRestart: true
+  transit_HD_1280x720_2:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_HD_1280x720/HD_public-square-watertown-ny.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_HD_1280x720_2
+    runOnInitRestart: true
+  transit_HD_1280x720_3:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_HD_1280x720/HD_tokio-live-cam.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_HD_1280x720_3
+    runOnInitRestart: true
+  transit_HD_1280x720_4:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_HD_1280x720/HD_town-of-collingwood-live-stream.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_HD_1280x720_4
+    runOnInitRestart: true
+  transit_HD_1280x720_5:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_HD_1280x720/HD_village-of-tilton-traffic-camera.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_HD_1280x720_5
+    runOnInitRestart: true
+  transit_VGA_640x480_1:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_VGA_640x480/VGA_4corners-camera-downtown.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_VGA_640x480_1
+    runOnInitRestart: true
+  transit_VGA_640x480_2:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_VGA_640x480/VGA_public-square-watertown-ny.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_VGA_640x480_2
+    runOnInitRestart: true
+  transit_VGA_640x480_3:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_VGA_640x480/VGA_tokio-live-cam.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_VGA_640x480_3
+    runOnInitRestart: true
+  transit_VGA_640x480_4:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_VGA_640x480/VGA_town-of-collingwood-live-stream.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_VGA_640x480_4
+    runOnInitRestart: true
+  transit_VGA_640x480_5:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_VGA_640x480/VGA_village-of-tilton-traffic-camera.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_VGA_640x480_5
+    runOnInitRestart: true
+  transit_FULL_HD_1920x1080_1:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_FULL_HD_1920x1080/4corners-camera-downtown.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_FULL_HD_1920x1080_1
+    runOnInitRestart: true
+  transit_FULL_HD_1920x1080_2:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_FULL_HD_1920x1080/public-square-watertown-ny.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_FULL_HD_1920x1080_2
+    runOnInitRestart: true
+  transit_FULL_HD_1920x1080_3:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_FULL_HD_1920x1080/tokio-live-cam.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_FULL_HD_1920x1080_3
+    runOnInitRestart: true
+  transit_FULL_HD_1920x1080_4:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_FULL_HD_1920x1080/town-of-collingwood-live-stream.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_FULL_HD_1920x1080_4
+    runOnInitRestart: true
+  transit_FULL_HD_1920x1080_5:
+    runOnDemand: ffmpeg -re -stream_loop -1 -i ./videos/transit_FULL_HD_1920x1080/village-of-tilton-traffic-camera.mp4
+      -c:v libx264 -preset veryfast -tune zerolatency -b:v 1000k -bufsize 500k -vf
+      'fps=30' -r 30 -an -f rtsp rtsp://fabio:th0202@localhost:8554/transit_FULL_HD_1920x1080_5
     runOnInitRestart: true
 authInternalUsers:
 - user: fabio
